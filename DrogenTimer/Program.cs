@@ -28,13 +28,6 @@ namespace DrogenTimer
             Application.Run(new Form1());
         }
 
-        private static void thr()
-        {
-
-
-            chat.OnChatMessage += chat_OnChatMessage;
-        }
-
         private static void chat_OnChatMessage(DateTime time, string message)
         {
             if (message.Contains("Du hast 2500 Samen eingepflanzt. In 15 Minuten kannst du sie ernten."))
